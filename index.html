@@ -1,60 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portafolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBRR 💕</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #ffccd5;
+            color: #4e4e4e;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 4em;
+            color: #e94e77;
+            margin-top: 100px;
+        }
+        .heart {
+            font-size: 150px;
+            color: #e94e77;
+            animation: pulse 1.5s infinite;
+        }
+        .message {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #4e4e4e;
+        }
+        .button {
+            background-color: #e94e77;
+            color: white;
+            padding: 15px 50px;
+            text-decoration: none;
+            font-size: 1.3em;
+            border-radius: 30px;
+            margin-top: 30px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff6f91;
+        }
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="estilos.css">
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .confetti {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            animation: fall 3s infinite;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+    </style>
 </head>
 <body>
-
-  <header class="text-center">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-
-        <a class="navbar-brand" href="#">Portafolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav text-right">
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 1</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 2</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 3</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 4</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-  </header>
-
-  <div class="jumbotron">
-    <div class="container">
-      <h3>Portafolio</h3>
+    <div class="confetti">
+        <div style="position: absolute; top: 10%; left: 10%; width: 10px; height: 10px; background-color: #ffcc00; animation: fall 3s infinite;"></div>
+        <div style="position: absolute; top: 20%; left: 30%; width: 10px; height: 10px; background-color: #ff6f91; animation: fall 3s infinite;"></div>
+        <div style="position: absolute; top: 15%; left: 50%; width: 10px; height: 10px; background-color: #00bcd4; animation: fall 3s infinite;"></div>
+        <div style="position: absolute; top: 25%; left: 70%; width: 10px; height: 10px; background-color: #f4c542; animation: fall 3s infinite;"></div>
     </div>
-  </div>
+    <h1>¡Para la ingeniera más hermosa!</h1>
+    <div class="heart">💖</div>
+    <p class="message">Este 14 de febrero, ¿aceptarías ser mi valentín?</p>
+    <p class="message">Te amo mucho, preciosa</p>
+    <!-- Aquí el enlace a WhatsApp -->
+    <a href="https://wa.me/522731256673?text=Si%20quiero,%20precioso%20%3C3" class="button" target="_blank">Sí quiero</a>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
 </body>
 </html>
+
